@@ -1420,13 +1420,13 @@ static void getHelperText(char* helperText, size_t lenText)
             if (nodeSetting->log)
             {
               if (nodeSetting->logAccel)
-                strlcat(helperText, "aX,aY,aZ,", lenText);
+                strlcat(helperText, "aX2,aY2,aZ2,", lenText);
               if (nodeSetting->logGyro)
-                strlcat(helperText, "gX,gY,gZ,", lenText);
+                strlcat(helperText, "gX2,gY2,gZ2,", lenText);
               if (nodeSetting->logMag)
-                strlcat(helperText, "mX,mY,mZ,", lenText);
+                strlcat(helperText, "mX2,mY2,mZ2,", lenText);
               if (nodeSetting->logTemp)
-                strlcat(helperText, "imu_degC,", lenText);
+                strlcat(helperText, "imu_degC2,", lenText);
             }
           }
           break;

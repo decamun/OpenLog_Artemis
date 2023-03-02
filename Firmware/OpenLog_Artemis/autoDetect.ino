@@ -1532,6 +1532,12 @@ deviceType_e testDevice(uint8_t i2cAddress, uint8_t muxAddress, uint8_t portNumb
       }
       break;
     case 0x6A:
+      {
+        SparkFun_ISM330DHCX sensor;
+        if (sensor.begin(qwiic, i2cAddress))
+          return(DEVICE_ISM330DHCX);
+      }
+      break;
     case 0x6B:
       {
         SparkFun_ISM330DHCX sensor;
